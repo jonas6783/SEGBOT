@@ -73,9 +73,7 @@ Schleif-Animation mit festem Stift und bewegtem Bauteil.
 
 ## Schnellstart
 
-> [!TIP]
-> **Stufe 4 läuft sofort** — ohne Roboter und ohne Scandaten, mit den
-> beiliegenden Projektergebnissen:
+
 
 ```bash
 cd 04_transformation
