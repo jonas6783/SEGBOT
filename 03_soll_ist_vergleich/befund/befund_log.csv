@@ -1,0 +1,3 @@
+timestamp,part_id,verdict,zonen_nio,schlimmste_zone,max_mm,toleranz_mm,ueberschreitung_mm,scan_qualitaet_mm,schleif_regionen
+2026-07-22T21:19:51,merged8,N.i.O.,4,Grat,2.998,0.4,2.598,0.314,26
+2026-07-22T21:21:04,merged8,N.i.O.,5,Grat,2.998,0.4,2.598,0.314,37

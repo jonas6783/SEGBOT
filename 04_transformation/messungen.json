@@ -1,0 +1,65 @@
+{
+  "_hinweis": "Unsere 4 Antastmessungen der letzten Kalibrierrunde — zu wenige Punkte, siehe README.",
+  "messungen": [
+    {
+      "cad_punkt": [
+        30.0,
+        20.0,
+        0.0
+      ],
+      "flansch": [
+        568.44,
+        -8.74,
+        195.1,
+        0.0,
+        9.0,
+        0.0
+      ]
+    },
+    {
+      "cad_punkt": [
+        -30.0,
+        20.0,
+        12.0
+      ],
+      "flansch": [
+        664.61,
+        32.57,
+        184.05,
+        25.0,
+        -9.0,
+        6.0
+      ]
+    },
+    {
+      "cad_punkt": [
+        -30.0,
+        -20.0,
+        0.0
+      ],
+      "flansch": [
+        583.61,
+        50.8,
+        194.59,
+        50.0,
+        9.0,
+        12.0
+      ]
+    },
+    {
+      "cad_punkt": [
+        26.0,
+        -18.0,
+        12.0
+      ],
+      "flansch": [
+        600.28,
+        9.49,
+        175.3,
+        75.0,
+        -9.0,
+        0.0
+      ]
+    }
+  ]
+}
