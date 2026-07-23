@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 262" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bx" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#232833"/><stop offset="1" stop-color="#181c24"/>
+    </linearGradient>
+    <filter id="sh" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="2.5" stdDeviation="3.5" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+    <marker id="pf" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8b94a5"/>
+    </marker>
+    <marker id="pfo" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+  <rect width="940" height="262" rx="12" fill="#0e1015"/>
+
+  <!-- Hauptkette -->
+  <g stroke="#8b94a5" stroke-width="2.2">
+    <line x1="184" y1="78" x2="212" y2="78" marker-end="url(#pf)"/>
+    <line x1="372" y1="78" x2="400" y2="78" marker-end="url(#pf)"/>
+    <line x1="560" y1="78" x2="588" y2="78" marker-end="url(#pf)"/>
+    <line x1="748" y1="78" x2="776" y2="78" marker-end="url(#pf)"/>
+  </g>
+
+  <!-- Kanten-Labels -->
+  <g font-size="10.5" fill="#c9ced6" text-anchor="middle">
+    <rect x="146" y="106" width="104" height="20" rx="10" fill="#161a21" stroke="#2c313a"/>
+    <text x="198" y="120">PLY-Scans</text>
+    <rect x="312" y="106" width="148" height="20" rx="10" fill="#161a21" stroke="#2c313a"/>
+    <text x="386" y="120">scan_registriert.ply</text>
+    <rect x="512" y="106" width="124" height="20" rx="10" fill="#161a21" stroke="#2c313a"/>
+    <text x="574" y="120">grind_path.json</text>
+    <rect x="702" y="106" width="120" height="20" rx="10" fill="#161a21" stroke="#2c313a"/>
+    <text x="762" y="120">robot_path.txt</text>
+  </g>
+
+  <!-- Stufen-Boxen -->
+  <g filter="url(#sh)">
+    <g transform="translate(30,42)">
+      <rect width="154" height="72" rx="10" fill="url(#bx)" stroke="#3a3f49" stroke-width="1.5"/>
+      <rect width="154" height="72" rx="10" fill="none" stroke="#ff7a18" stroke-width="2" opacity="0">
+        <animate attributeName="opacity" values="0;1;0;0;0;0;0" keyTimes="0;0.06;0.18;0.4;0.6;0.8;1" dur="10s" repeatCount="indefinite"/>
+      </rect>
+      <text x="77" y="24" text-anchor="middle" fill="#ff7a18" font-size="11.5" font-weight="700">01 ERFASSUNG</text>
+      <text x="77" y="43" text-anchor="middle" fill="#e8eaed" font-size="12">RealSense D405</text>
+      <text x="77" y="59" text-anchor="middle" fill="#8b94a5" font-size="10.5">YOLO + SAM</text>
+    </g>
+    <g transform="translate(218,42)">
+      <rect width="154" height="72" rx="10" fill="url(#bx)" stroke="#3a3f49" stroke-width="1.5"/>
+      <rect width="154" height="72" rx="10" fill="none" stroke="#ff7a18" stroke-width="2" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;0;0;0;0" keyTimes="0;0.16;0.26;0.4;0.6;0.8;1" dur="10s" repeatCount="indefinite"/>
+      </rect>
+      <text x="77" y="24" text-anchor="middle" fill="#ff7a18" font-size="11.5" font-weight="700">02 REGISTRIERUNG</text>
+      <text x="77" y="43" text-anchor="middle" fill="#e8eaed" font-size="12">24 Startlagen · ICP</text>
+      <text x="77" y="59" text-anchor="middle" fill="#8b94a5" font-size="10.5">Spiegel-Check · Konsens</text>
+    </g>
+    <g transform="translate(406,42)">
+      <rect width="154" height="72" rx="10" fill="url(#bx)" stroke="#3a3f49" stroke-width="1.5"/>
+      <rect width="154" height="72" rx="10" fill="none" stroke="#ff7a18" stroke-width="2" opacity="0">
+        <animate attributeName="opacity" values="0;0;0;1;0;0;0" keyTimes="0;0.2;0.36;0.46;0.6;0.8;1" dur="10s" repeatCount="indefinite"/>
+      </rect>
+      <text x="77" y="24" text-anchor="middle" fill="#ff7a18" font-size="11.5" font-weight="700">03 SOLL-IST</text>
+      <text x="77" y="43" text-anchor="middle" fill="#e8eaed" font-size="12">Zonen-Bewertung</text>
+      <text x="77" y="59" text-anchor="middle" fill="#8b94a5" font-size="10.5">Schleifpfade + Report</text>
+    </g>
+    <g transform="translate(594,42)">
+      <rect width="154" height="72" rx="10" fill="url(#bx)" stroke="#3a3f49" stroke-width="1.5"/>
+      <rect width="154" height="72" rx="10" fill="none" stroke="#ff7a18" stroke-width="2" opacity="0">
+        <animate attributeName="opacity" values="0;0;0;0;1;0;0" keyTimes="0;0.2;0.4;0.56;0.66;0.8;1" dur="10s" repeatCount="indefinite"/>
+      </rect>
+      <text x="77" y="24" text-anchor="middle" fill="#ff7a18" font-size="11.5" font-weight="700">04 TRANSFORMATION</text>
+      <text x="77" y="43" text-anchor="middle" fill="#e8eaed" font-size="12">invertierte Kinematik</text>
+      <text x="77" y="59" text-anchor="middle" fill="#8b94a5" font-size="10.5">5 Bewegungsphasen</text>
+    </g>
+    <g transform="translate(782,42)">
+      <rect width="128" height="72" rx="10" fill="url(#bx)" stroke="#3a3f49" stroke-width="1.5"/>
+      <rect width="128" height="72" rx="10" fill="none" stroke="#ff7a18" stroke-width="2" opacity="0">
+        <animate attributeName="opacity" values="0;0;0;0;0;1;0" keyTimes="0;0.2;0.4;0.6;0.76;0.86;1" dur="10s" repeatCount="indefinite"/>
+      </rect>
+      <text x="64" y="24" text-anchor="middle" fill="#ff7a18" font-size="11.5" font-weight="700">05 ROBOTER</text>
+      <text x="64" y="43" text-anchor="middle" fill="#e8eaed" font-size="12">KUKA Sunrise.OS</text>
+      <text x="64" y="59" text-anchor="middle" fill="#8b94a5" font-size="10.5">Java-Executor</text>
+    </g>
+  </g>
+
+  <!-- Kalibrierungs-Zweig -->
+  <g filter="url(#sh)">
+    <rect x="380" y="176" width="200" height="58" rx="10" fill="#1c1608" stroke="#f59e0b" stroke-width="1.6"/>
+    <text x="480" y="199" text-anchor="middle" fill="#f59e0b" font-size="11.5" font-weight="700">KALIBRIERUNG</text>
+    <text x="480" y="217" text-anchor="middle" fill="#c9ced6" font-size="11">Bauteillage im Greifer + Stiftspitze</text>
+  </g>
+  <path d="M 580 205 H 671 V 118" fill="none" stroke="#f59e0b" stroke-width="2.2" marker-end="url(#pfo)"/>
+  <rect x="600" y="140" width="176" height="20" rx="10" fill="#161a21" stroke="#5c4408"/>
+  <text x="688" y="154" text-anchor="middle" fill="#f0c86a" font-size="10.5">kalibrierung_ergebnis.json</text>
+
+  <!-- wandernder Datenpunkt -->
+  <circle r="6.5" fill="#ff7a18">
+    <animateMotion path="M 40 78 H 900" dur="10s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="11" fill="none" stroke="#ff7a18" stroke-width="2" opacity="0.45">
+    <animateMotion path="M 40 78 H 900" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="7;13;7" dur="1.1s" repeatCount="indefinite"/>
+  </circle>
+</svg>

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#13161c"/><stop offset="1" stop-color="#0a0c10"/>
+    </linearGradient>
+    <linearGradient id="arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f2f4f7"/><stop offset="1" stop-color="#c3c9d2"/>
+    </linearGradient>
+    <linearGradient id="metall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a515c"/><stop offset="1" stop-color="#2b3038"/>
+    </linearGradient>
+    <linearGradient id="guss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2f9e5b"/><stop offset="1" stop-color="#17663a"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#ff7a18" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ff7a18" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="760" height="430" rx="14" fill="url(#bg)"/>
+  <g stroke="#1a1e25" stroke-width="1"><line x1="40" y1="66" x2="40" y2="378"/><line x1="80" y1="66" x2="80" y2="378"/><line x1="120" y1="66" x2="120" y2="378"/><line x1="160" y1="66" x2="160" y2="378"/><line x1="200" y1="66" x2="200" y2="378"/><line x1="240" y1="66" x2="240" y2="378"/><line x1="280" y1="66" x2="280" y2="378"/><line x1="320" y1="66" x2="320" y2="378"/><line x1="360" y1="66" x2="360" y2="378"/><line x1="400" y1="66" x2="400" y2="378"/><line x1="440" y1="66" x2="440" y2="378"/><line x1="480" y1="66" x2="480" y2="378"/><line x1="520" y1="66" x2="520" y2="378"/><line x1="560" y1="66" x2="560" y2="378"/><line x1="600" y1="66" x2="600" y2="378"/><line x1="640" y1="66" x2="640" y2="378"/><line x1="680" y1="66" x2="680" y2="378"/><line x1="720" y1="66" x2="720" y2="378"/></g>
+  <text x="380" y="30" text-anchor="middle" fill="#e8eaed" font-size="18" font-weight="600">Invertierte Kinematik</text>
+  <line x1="30" y1="378" x2="730" y2="378" stroke="#3a3f49" stroke-width="3"/>
+
+  <!-- Sockel + Saeule des Roboters -->
+  <g filter="url(#soft)">
+    <rect x="94" y="332" width="124" height="46" rx="10" fill="url(#metall)"/>
+    <rect x="129" y="92" width="44" height="246" rx="20" fill="url(#arm)"/>
+  </g>
+  <text x="100" y="404" fill="#8b94a5" font-size="12">KUKA LBR iiwa</text>
+
+  <!-- ortsfester Stift, bodenmontiert, Spitze nach OBEN -->
+  <g filter="url(#soft)">
+    <rect x="394" y="352" width="72" height="26" rx="7" fill="url(#metall)"/>
+    <rect x="417" y="322" width="26" height="30" rx="5" fill="#3a3f49"/>
+    <path d="M 422 320 l 16 -5 -16 -5 16 -5 -16 -5 16 -5" fill="none" stroke="#8b94a5" stroke-width="2.6"/>
+    <rect x="419" y="266" width="22" height="30" rx="6" fill="#101216" stroke="#3a3f49"/>
+    <rect x="419" y="284" width="22" height="12" rx="6" fill="#ff7a18"/>
+    <polygon points="423,266 437,266 430,252" fill="#ff9b4d"/>
+    <circle cx="430" cy="250" r="13" fill="url(#glow)">
+      <animate attributeName="r" values="9;16;9" dur="1.3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <text x="482" y="330" fill="#8b94a5" font-size="12">gefederter Stift,</text>
+  <text x="482" y="346" fill="#8b94a5" font-size="12">ortsfest</text>
+
+  <!-- Arm mit IK-Keyframes -->
+  <g filter="url(#soft)">
+    <animateTransform attributeName="transform" type="rotate" values="45.11 150 74;45.02 150 74;44.75 150 74;44.31 150 74;43.69 150 74;42.90 150 74;41.95 150 74;40.85 150 74;39.59 150 74;38.20 150 74;36.69 150 74;35.05 150 74;33.31 150 74;31.49 150 74;29.59 150 74;27.64 150 74;25.67 150 74;23.68 150 74;21.74 150 74;19.87 150 74;18.13 150 74;16.62 150 74;15.41 150 74;14.63 150 74;14.36 150 74;14.63 150 74;15.41 150 74;16.62 150 74;18.13 150 74;19.87 150 74;21.74 150 74;23.68 150 74;25.67 150 74;27.64 150 74;29.59 150 74;31.49 150 74;33.31 150 74;35.05 150 74;36.69 150 74;38.20 150 74;39.59 150 74;40.85 150 74;41.95 150 74;42.90 150 74;43.69 150 74;44.31 150 74;44.75 150 74;45.02 150 74;45.11 150 74" keyTimes="0.0000;0.0208;0.0417;0.0625;0.0833;0.1042;0.1250;0.1458;0.1667;0.1875;0.2083;0.2292;0.2500;0.2708;0.2917;0.3125;0.3333;0.3542;0.3750;0.3958;0.4167;0.4375;0.4583;0.4792;0.5000;0.5208;0.5417;0.5625;0.5833;0.6042;0.6250;0.6458;0.6667;0.6875;0.7083;0.7292;0.7500;0.7708;0.7917;0.8125;0.8333;0.8542;0.8750;0.8958;0.9167;0.9375;0.9583;0.9792;1.0000" dur="8s" repeatCount="indefinite"/>
+    <rect x="150" y="60" width="200" height="28" rx="14" fill="url(#arm)"/>
+    <circle cx="150" cy="74" r="21" fill="url(#arm)" stroke="#ff7a18" stroke-width="4.5"/>
+    <g transform="translate(150 74)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="-88.16 200 0;-87.98 200 0;-87.44 200 0;-86.54 200 0;-85.29 200 0;-83.70 200 0;-81.79 200 0;-79.55 200 0;-77.02 200 0;-74.21 200 0;-71.14 200 0;-67.83 200 0;-64.31 200 0;-60.61 200 0;-56.77 200 0;-52.81 200 0;-48.79 200 0;-44.77 200 0;-40.80 200 0;-37.00 200 0;-33.47 200 0;-30.38 200 0;-27.92 200 0;-26.32 200 0;-25.77 200 0;-26.32 200 0;-27.92 200 0;-30.38 200 0;-33.47 200 0;-37.00 200 0;-40.80 200 0;-44.77 200 0;-48.79 200 0;-52.81 200 0;-56.77 200 0;-60.61 200 0;-64.31 200 0;-67.83 200 0;-71.14 200 0;-74.21 200 0;-77.02 200 0;-79.55 200 0;-81.79 200 0;-83.70 200 0;-85.29 200 0;-86.54 200 0;-87.44 200 0;-87.98 200 0;-88.16 200 0" keyTimes="0.0000;0.0208;0.0417;0.0625;0.0833;0.1042;0.1250;0.1458;0.1667;0.1875;0.2083;0.2292;0.2500;0.2708;0.2917;0.3125;0.3333;0.3542;0.3750;0.3958;0.4167;0.4375;0.4583;0.4792;0.5000;0.5208;0.5417;0.5625;0.5833;0.6042;0.6250;0.6458;0.6667;0.6875;0.7083;0.7292;0.7500;0.7708;0.7917;0.8125;0.8333;0.8542;0.8750;0.8958;0.9167;0.9375;0.9583;0.9792;1.0000" dur="8s" repeatCount="indefinite"/>
+        <rect x="0" y="-12" width="190" height="24" rx="12" fill="url(#arm)" transform="translate(200 0)"/>
+        <circle cx="200" cy="0" r="16" fill="url(#arm)" stroke="#ff7a18" stroke-width="4"/>
+        <g transform="translate(390 0)">
+          <g>
+            <animateTransform attributeName="transform" type="rotate" values="43.05 0 0;42.96 0 0;42.68 0 0;42.23 0 0;41.60 0 0;40.80 0 0;39.83 0 0;38.71 0 0;37.43 0 0;36.01 0 0;34.45 0 0;32.78 0 0;31.00 0 0;29.12 0 0;27.17 0 0;25.17 0 0;23.13 0 0;21.08 0 0;19.07 0 0;17.13 0 0;15.34 0 0;13.76 0 0;12.51 0 0;11.69 0 0;11.41 0 0;11.69 0 0;12.51 0 0;13.76 0 0;15.34 0 0;17.13 0 0;19.07 0 0;21.08 0 0;23.13 0 0;25.17 0 0;27.17 0 0;29.12 0 0;31.00 0 0;32.78 0 0;34.45 0 0;36.01 0 0;37.43 0 0;38.71 0 0;39.83 0 0;40.80 0 0;41.60 0 0;42.23 0 0;42.68 0 0;42.96 0 0;43.05 0 0" keyTimes="0.0000;0.0208;0.0417;0.0625;0.0833;0.1042;0.1250;0.1458;0.1667;0.1875;0.2083;0.2292;0.2500;0.2708;0.2917;0.3125;0.3333;0.3542;0.3750;0.3958;0.4167;0.4375;0.4583;0.4792;0.5000;0.5208;0.5417;0.5625;0.5833;0.6042;0.6250;0.6458;0.6667;0.6875;0.7083;0.7292;0.7500;0.7708;0.7917;0.8125;0.8333;0.8542;0.8750;0.8958;0.9167;0.9375;0.9583;0.9792;1.0000" dur="8s" repeatCount="indefinite"/>
+            <circle cx="0" cy="0" r="11" fill="#c3c9d2" stroke="#8b94a5" stroke-width="2"/>
+            <rect x="-26" y="8" width="52" height="18" rx="5" fill="url(#metall)"/>
+            <rect x="-33" y="26" width="66" height="8" rx="3" fill="#14171c" stroke="#3a3f49"/>
+            <text x="40" y="24" fill="#8b94a5" font-size="11">Magnetgreifer</text>
+            <!-- echte Bauteil-Silhouette aus dem Befund-Report -->
+            <g transform="translate(-48.9 165.4) scale(0.7143 0.5143)">
+              <path d="M 99.4 -244.3 L 78.5 -248.3 L 68.4 -254.5 L 14.4 -248.8 L -52.6 -210.6 L -66.7 -196.5 L -74.0 -184.1 L -79.1 -182.4 L -89.8 -162.7 L -103.3 -152.6 L -105.0 -114.9 L -96.0 -96.8 L -83.0 -89.5 L -81.4 -73.8 L -85.9 -69.2 L -81.4 -44.5 L -70.7 -32.1 L -63.3 -27.6 L -46.4 -28.2 L -35.2 -22.5 L -8.7 -22.5 L 2.0 -10.7 L 5.3 -2.3 L 15.5 0.0 L 40.3 -7.9 L 68.4 -21.4 L 89.2 -41.1 L 87.5 -53.5 L 90.9 -59.7 L 92.6 -82.2 L 84.7 -100.8 L 75.7 -110.3 L 61.6 -118.8 L 61.6 -125.0 L 84.2 -137.4 L 99.4 -177.3 L 103.9 -198.7 L 101.6 -212.8 L 105.0 -225.2 L 104.4 -235.3 Z" fill="url(#guss)" stroke="#57d987" stroke-width="1.4" vector-effect="non-scaling-stroke" opacity="0.96"/>
+            </g>
+            <g><circle cx="-92" cy="157" r="2.3" fill="#ef4444"/><circle cx="-83" cy="158" r="2.3" fill="#ef4444"/><circle cx="-73" cy="159" r="2.3" fill="#ef4444"/><circle cx="-64" cy="159" r="2.3" fill="#ef4444"/><circle cx="-55" cy="160" r="2.3" fill="#ef4444"/><circle cx="-45" cy="160" r="2.3" fill="#ef4444"/><circle cx="-36" cy="159" r="2.3" fill="#ef4444"/><circle cx="-27" cy="159" r="2.3" fill="#ef4444"/><circle cx="-17" cy="158" r="2.3" fill="#ef4444"/><circle cx="-8" cy="157" r="2.3" fill="#ef4444"/></g>
+            <ellipse cx="-20" cy="70" rx="12" ry="7" fill="#ec4899" opacity="0.9"/>
+            <line x1="0" y1="164" x2="-100" y2="164" stroke="#ff7a18" stroke-width="9" stroke-linecap="round" opacity="0.35" stroke-dasharray="100" stroke-dashoffset="100">
+              <animate attributeName="stroke-dashoffset" values="100;0;0" keyTimes="0;0.5;1" dur="8s" repeatCount="indefinite"/>
+            </line>
+            <line x1="0" y1="164" x2="-100" y2="164" stroke="#ff7a18" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100">
+              <animate attributeName="stroke-dashoffset" values="100;0;0" keyTimes="0;0.5;1" dur="8s" repeatCount="indefinite"/>
+            </line>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <text x="380" y="418" text-anchor="middle" fill="#8b94a5" font-size="12.5">Stift und Kamera stehen fest — der KUKA LBR iiwa f&#252;hrt das Gussteil dar&#252;ber</text>
+  <!-- Legende -->
+  <g font-size="12" fill="#8b94a5">
+    <circle cx="256" cy="396" r="3" fill="#ef4444"/><text x="268" y="400">Grat</text>
+    <ellipse cx="318" cy="396" rx="8" ry="4.5" fill="#ec4899"/><text x="334" y="400">Angussrest</text>
+    <line x1="424" y1="396" x2="448" y2="396" stroke="#ff7a18" stroke-width="4" stroke-linecap="round"/><text x="456" y="400">Markierung</text>
+  </g>
+</svg>
